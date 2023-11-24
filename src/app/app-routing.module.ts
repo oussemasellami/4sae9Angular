@@ -5,13 +5,15 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ResidencesComponent } from './residences/residences.component';
 import { CardresidenceComponent } from './cardresidence/cardresidence.component';
 import { ShowappartComponent } from './showappart/showappart.component';
+import { FormappartComponent } from './formappart/formappart.component';
 
 const ROUTES:Routes=[
   {path:'',redirectTo:"home",pathMatch:"full"},
   {path:"home",component:ResidencesComponent},
   {path:"card",component:CardresidenceComponent},
   {path:"card/showappart/:id",component:ShowappartComponent},
-  {path:"**",component:PagenotfoundComponent}
+  {path:"card/showappart/:id/addappart/:id",component:FormappartComponent},
+ // {path:"**",component:PagenotfoundComponent}
 ]
 
 @NgModule({
