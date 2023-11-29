@@ -6,11 +6,13 @@ import { ResidencesComponent } from './residences/residences.component';
 import { CardresidenceComponent } from './cardresidence/cardresidence.component';
 import { ShowappartComponent } from './showappart/showappart.component';
 import { FormappartComponent } from './formappart/formappart.component';
+import { ListAppartmentComponent } from './list-appartment/list-appartment.component';
 
 const ROUTES:Routes=[
   {path:'',redirectTo:"home",pathMatch:"full"},
   {path:"home",component:ResidencesComponent},
   {path:"card",component:CardresidenceComponent},
+  {path:"appartement/list",component:ListAppartmentComponent},
   {path:"card/showappart/:id",component:ShowappartComponent},
   {path:"card/showappart/:id/addappart/:id",component:FormappartComponent},
  // {path:"**",component:PagenotfoundComponent}

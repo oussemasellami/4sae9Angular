@@ -16,6 +16,10 @@ import { ListannonceComponent } from './annonce/listannonce/listannonce.componen
 import { AnnonceRoutingModule } from './annonce/annonce-routing.module';
 import { AnnonceModule } from './annonce/annonce.module';
 import { FormappartComponent } from './formappart/formappart.component';
+import { ErrorsComponent } from './shared/errors/errors.component';
+import { ListAppartmentComponent } from './list-appartment/list-appartment.component';
+import { AddApparmentComponent } from './add-apparment/add-apparment.component';
+import { UpdateApparmentComponent } from './update-apparment/update-apparment.component';
 
 
 
@@ -29,6 +33,10 @@ import { FormappartComponent } from './formappart/formappart.component';
     PagenotfoundComponent,
     ShowappartComponent,
     FormappartComponent,
+    ErrorsComponent,
+    ListAppartmentComponent,
+    AddApparmentComponent,
+    UpdateApparmentComponent,
     
     
   ],

@@ -1,0 +1,5 @@
+<app-add-apparment (addformEvent)="add($event)"></app-add-apparment>
+<app-add-apparment
+  *ngFor="let r of appartementsList"
+  [appart]="r"
+></app-add-apparment>
