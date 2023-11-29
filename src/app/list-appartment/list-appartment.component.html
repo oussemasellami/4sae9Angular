@@ -1,5 +1,7 @@
-<app-add-apparment (addformEvent)="add($event)"></app-add-apparment>
-<app-add-apparment
-  *ngFor="let r of appartementsList"
-  [appart]="r"
-></app-add-apparment>
+<div class="d-flex justify-content-around">
+  <app-appartment
+    class="col-4"
+    *ngFor="let r of appartementsList"
+    [appartment]="r"
+  ></app-appartment>
+</div>

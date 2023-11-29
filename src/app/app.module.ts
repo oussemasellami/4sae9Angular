@@ -20,6 +20,7 @@ import { ErrorsComponent } from './shared/errors/errors.component';
 import { ListAppartmentComponent } from './list-appartment/list-appartment.component';
 import { AddApparmentComponent } from './add-apparment/add-apparment.component';
 import { UpdateApparmentComponent } from './update-apparment/update-apparment.component';
+import { AppartmentComponent } from './appartment/appartment.component';
 
 
 
@@ -37,6 +38,7 @@ import { UpdateApparmentComponent } from './update-apparment/update-apparment.co
     ListAppartmentComponent,
     AddApparmentComponent,
     UpdateApparmentComponent,
+    AppartmentComponent,
     
     
   ],
