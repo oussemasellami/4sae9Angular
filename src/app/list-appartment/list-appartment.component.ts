@@ -10,8 +10,8 @@ import { Residence } from '../models/residence';
 export class ListAppartmentComponent {
 
   imageUrl:string='/assets/images/'
-appart!:null
-
+appart=null
+aff:boolean=false
   residencesList: Residence[]=[
     {id: 1, name: "Residence 1", address: "Address 1", image: this.imageUrl+"residence1.jpg"},
     {id: 2, name: "Residence 2", address: "Address 2", image: this.imageUrl+"residence2.jpg"},
@@ -34,8 +34,20 @@ this.appartementsList=this.appartementsList.filter(appart=>appart!==appar     )
   }
 addappartment(appar:Appartement){
   this.appartementsList.push(appar)
+  this.aff=true
+
 }
-updateappartmet(appar:any){
-this.appartementsList=this.appartementsList.filter(appart=>appart.id!==appar.id)
+display(){
+  this.aff=!this.aff
+}
+
+updateappart(appar:any){
+  this.appart=appar
+}
+updateappartment(appar:any){
+let i=this.appartementsList.findIndex(a=>a.id==appar.id)
+this.appartementsList[i]=appar
+console.log("update:"+JSON.stringify(this.appartementsList))
+this.appart=null
 }
 }

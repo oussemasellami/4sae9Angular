@@ -1,7 +1,17 @@
-<div class="d-flex justify-content-around">
+<button  (click)="display()">add appartment</button>
+
+<app-add-apparment *ngIf="aff" (addformEvent)="addappartment($event)"></app-add-apparment>
+<div class="d-flex flex-wrap">
   <app-appartment
-    class="col-4"
+    class="col-lg-4 col-md-6"
     *ngFor="let r of appartementsList"
     [appartment]="r"
+    (deleteEvent)="delete($event)"
+    (updateEvent)="updateappart($event)"
   ></app-appartment>
+  <app-update-apparment
+  *ngIf="appart"
+[app]="appart"
+   (updateformEvent)="updateappartment($event)"
+  ></app-update-apparment>
 </div>
